@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dimes Kabaaka - Services</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      box-sizing: border-box;
+    }
+    body {
+      background: #f0f4f8;
+    }
+    header {
+      background: #1d3557;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header img {
+      width: 50px;
+    }
+    .logo-title {
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .hamburger {
+      font-size: 1.5rem;
+      color: white;
+      cursor: pointer;
+    }
+    nav {
+      display: none;
+    }
+    nav.active {
+      display: block;
+      background: #1d3557;
+      text-align: center;
+    }
+    nav a {
+      display: block;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+    }
+    .about-section {
+      padding: 60px 20px;
+    }
+    .about-section h2 {
+      text-align: center;
+      color: #1d3557;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+    .testimonial {
+      background: white;
+      border: 3px solid #1d3557;
+      border-radius: 50px 0 50px 0;
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    .testimonial p {
+      font-size: 1.1rem;
+      color: #333;
+      line-height: 1.6;
+    }
+    .testimonial span {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+      color: #1d3557;
+    }
+
+    .mini-box {
+      background: #1d3557;
+      color: white;
+      padding: 12px 20px;
+      max-width: 300px;
+      margin: 20px auto 0;
+      border-radius: 12px;
+      text-align: center;
+      font-size: 1rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 600px) {
+      .about-section h2 {
+        font-size: 1.5rem;
+      }
+      .testimonial {
+        margin: 10px;
+        border-radius: 20px;
+      }
+      .mini-box {
+        font-size: 0.9rem;
+        margin: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-title">
+    <img src="logo.jpg" alt="DK Logo" /> Dimes Kabaaka
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+</header>
+
+<nav id="navMenu">
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section class="about-section">
+  <h2>Why People Trust Dimes</h2>
+  <div class="testimonial">
+    <p>
+      “Dimes Kabaaka is simply the best! I ordered a product, and within hours, it was at my doorstep in Kumasi. Reliable, fast, and professional.”
+    </p>
+    <span>- A Happy Customer</span>
+  </div>
+
+  <div class="mini-box">
+    Trusted by over 500 clients in Kumasi and beyond!
+  </div>
+</section>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('navMenu').classList.toggle('active');
+  }
+</script>
+</body>
+</html>
